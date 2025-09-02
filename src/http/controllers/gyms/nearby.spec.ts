@@ -12,7 +12,7 @@ describe('Search Gym e2e', () => {
     await app.close()
   })
 
-  it.only('should be able list nearby gyms', async () => {
+  it('should be able list nearby gyms', async () => {
     const { token } = await createAndAuthenticateUser(app, true)
 
     await request(app.server)
